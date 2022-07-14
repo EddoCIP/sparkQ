@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD044865288019D500304FF7 /* sparkQ WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD044864288019D500304FF7 /* sparkQ WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD04486A288019D600304FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD044869288019D600304FF7 /* Assets.xcassets */; };
+		FD044870288019D600304FF7 /* sparkQ WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD04486F288019D600304FF7 /* sparkQ WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD044875288019D600304FF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD044874288019D600304FF7 /* ContentView.swift */; };
+		FD044877288019D600304FF7 /* sparkQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD044876288019D600304FF7 /* sparkQApp.swift */; };
+		FD044879288019D600304FF7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD044878288019D600304FF7 /* ComplicationController.swift */; };
+		FD04487B288019D600304FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD04487A288019D600304FF7 /* Assets.xcassets */; };
+		FD04487E288019D600304FF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD04487D288019D600304FF7 /* Preview Assets.xcassets */; };
+		FD0777E128801B3D00186AB8 /* CustomListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0777E028801B3D00186AB8 /* CustomListItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD044866288019D500304FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD04485A288019D500304FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD044863288019D500304FF7;
+			remoteInfo = "sparkQ WatchKit App";
+		};
+		FD044871288019D600304FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD04485A288019D500304FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD04486E288019D600304FF7;
+			remoteInfo = "sparkQ WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD044885288019D600304FF7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD044870288019D600304FF7 /* sparkQ WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD044889288019D600304FF7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FD044865288019D500304FF7 /* sparkQ WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD044860288019D500304FF7 /* sparkQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD044864288019D500304FF7 /* sparkQ WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sparkQ WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD044869288019D600304FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD04486F288019D600304FF7 /* sparkQ WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "sparkQ WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD044874288019D600304FF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD044876288019D600304FF7 /* sparkQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sparkQApp.swift; sourceTree = "<group>"; };
+		FD044878288019D600304FF7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FD04487A288019D600304FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD04487D288019D600304FF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD04487F288019D600304FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0777E028801B3D00186AB8 /* CustomListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD04486C288019D600304FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD044859288019D500304FF7 = {
+			isa = PBXGroup;
+			children = (
+				FD044868288019D500304FF7 /* sparkQ WatchKit App */,
+				FD044873288019D600304FF7 /* sparkQ WatchKit Extension */,
+				FD044861288019D500304FF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD044861288019D500304FF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD044860288019D500304FF7 /* sparkQ.app */,
+				FD044864288019D500304FF7 /* sparkQ WatchKit App.app */,
+				FD04486F288019D600304FF7 /* sparkQ WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD044868288019D500304FF7 /* sparkQ WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FD044869288019D600304FF7 /* Assets.xcassets */,
+			);
+			path = "sparkQ WatchKit App";
+			sourceTree = "<group>";
+		};
+		FD044873288019D600304FF7 /* sparkQ WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FD044874288019D600304FF7 /* ContentView.swift */,
+				FD044876288019D600304FF7 /* sparkQApp.swift */,
+				FD044878288019D600304FF7 /* ComplicationController.swift */,
+				FD04487A288019D600304FF7 /* Assets.xcassets */,
+				FD04487F288019D600304FF7 /* Info.plist */,
+				FD04487C288019D600304FF7 /* Preview Content */,
+				FD0777E028801B3D00186AB8 /* CustomListItem.swift */,
+			);
+			path = "sparkQ WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FD04487C288019D600304FF7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD04487D288019D600304FF7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD04485F288019D500304FF7 /* sparkQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD04488A288019D600304FF7 /* Build configuration list for PBXNativeTarget "sparkQ" */;
+			buildPhases = (
+				FD04485E288019D500304FF7 /* Resources */,
+				FD044889288019D600304FF7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD044867288019D500304FF7 /* PBXTargetDependency */,
+			);
+			name = sparkQ;
+			productName = sparkQ;
+			productReference = FD044860288019D500304FF7 /* sparkQ.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		FD044863288019D500304FF7 /* sparkQ WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD044886288019D600304FF7 /* Build configuration list for PBXNativeTarget "sparkQ WatchKit App" */;
+			buildPhases = (
+				FD044862288019D500304FF7 /* Resources */,
+				FD044885288019D600304FF7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD044872288019D600304FF7 /* PBXTargetDependency */,
+			);
+			name = "sparkQ WatchKit App";
+			productName = "sparkQ WatchKit App";
+			productReference = FD044864288019D500304FF7 /* sparkQ WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FD04486E288019D600304FF7 /* sparkQ WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD044882288019D600304FF7 /* Build configuration list for PBXNativeTarget "sparkQ WatchKit Extension" */;
+			buildPhases = (
+				FD04486B288019D600304FF7 /* Sources */,
+				FD04486C288019D600304FF7 /* Frameworks */,
+				FD04486D288019D600304FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sparkQ WatchKit Extension";
+			productName = "sparkQ WatchKit Extension";
+			productReference = FD04486F288019D600304FF7 /* sparkQ WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD04485A288019D500304FF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FD04485F288019D500304FF7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FD044863288019D500304FF7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FD04486E288019D600304FF7 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FD04485D288019D500304FF7 /* Build configuration list for PBXProject "sparkQ" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD044859288019D500304FF7;
+			productRefGroup = FD044861288019D500304FF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD04485F288019D500304FF7 /* sparkQ */,
+				FD044863288019D500304FF7 /* sparkQ WatchKit App */,
+				FD04486E288019D600304FF7 /* sparkQ WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD04485E288019D500304FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD044862288019D500304FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD04486A288019D600304FF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD04486D288019D600304FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD04487E288019D600304FF7 /* Preview Assets.xcassets in Resources */,
+				FD04487B288019D600304FF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD04486B288019D600304FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD044875288019D600304FF7 /* ContentView.swift in Sources */,
+				FD0777E128801B3D00186AB8 /* CustomListItem.swift in Sources */,
+				FD044877288019D600304FF7 /* sparkQApp.swift in Sources */,
+				FD044879288019D600304FF7 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD044867288019D500304FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD044863288019D500304FF7 /* sparkQ WatchKit App */;
+			targetProxy = FD044866288019D500304FF7 /* PBXContainerItemProxy */;
+		};
+		FD044872288019D600304FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD04486E288019D600304FF7 /* sparkQ WatchKit Extension */;
+			targetProxy = FD044871288019D600304FF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD044880288019D600304FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD044881288019D600304FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD044883288019D600304FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sparkQ WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FANN368M5W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "sparkQ WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "sparkQ WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		FD044884288019D600304FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"sparkQ WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FANN368M5W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "sparkQ WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "sparkQ WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		FD044887288019D600304FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FANN368M5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = sparkQ_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "sparkQ WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		FD044888288019D600304FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FANN368M5W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = sparkQ_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "sparkQ WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		FD04488B288019D600304FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FANN368M5W;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FD04488C288019D600304FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FANN368M5W;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD04485D288019D500304FF7 /* Build configuration list for PBXProject "sparkQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD044880288019D600304FF7 /* Debug */,
+				FD044881288019D600304FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD044882288019D600304FF7 /* Build configuration list for PBXNativeTarget "sparkQ WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD044883288019D600304FF7 /* Debug */,
+				FD044884288019D600304FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD044886288019D600304FF7 /* Build configuration list for PBXNativeTarget "sparkQ WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD044887288019D600304FF7 /* Debug */,
+				FD044888288019D600304FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD04488A288019D600304FF7 /* Build configuration list for PBXNativeTarget "sparkQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD04488B288019D600304FF7 /* Debug */,
+				FD04488C288019D600304FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD04485A288019D500304FF7 /* Project object */;
+}
