@@ -9,23 +9,28 @@ import SwiftUI
 
 struct CustomListItem: View {
     var counter: Int
-    var text: String
+//    var text: String
+    var question : QuestionModel
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
                 Spacer()
-                Image(systemName: "person")
-                    .foregroundColor(Color.black)
-                Image(systemName: "person")
-                    .foregroundColor(Color.black)
+                if question.isChecked {
+                    Image(systemName: "checkmark.circle.fill")
+                        .foregroundColor(Color.black)
+                }
+                if question.isPinned {
+                    Image(systemName: "pin.circle.fill")
+                        .foregroundColor(Color.black)
+                }
             }
             .padding()
 //            Spacer()
             VStack(alignment: .leading) {
                 Text("\(counter)")
                     .font(.caption2)
-                Text(text)
+                Text(question.question)
                     .foregroundColor(Color.black)
                     .lineLimit(nil)
                     .minimumScaleFactor(0.8)
@@ -42,6 +47,6 @@ struct CustomListItem: View {
 
 struct CustomListItem_Previews: PreviewProvider {
     static var previews: some View {
-        CustomListItem(counter: 0, text: "INI APAAA")
+        CustomListItem(counter: 0, question: QuestionModel())
     }
 }

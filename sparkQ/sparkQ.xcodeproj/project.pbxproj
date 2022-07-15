@@ -16,6 +16,7 @@
 		FD04487B288019D600304FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD04487A288019D600304FF7 /* Assets.xcassets */; };
 		FD04487E288019D600304FF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD04487D288019D600304FF7 /* Preview Assets.xcassets */; };
 		FD0777E128801B3D00186AB8 /* CustomListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0777E028801B3D00186AB8 /* CustomListItem.swift */; };
+		FD0777E72881A74100186AB8 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0777E62881A74100186AB8 /* QuestionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		FD04487D288019D600304FF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD04487F288019D600304FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD0777E028801B3D00186AB8 /* CustomListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListItem.swift; sourceTree = "<group>"; };
+		FD0777E62881A74100186AB8 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				FD04487F288019D600304FF7 /* Info.plist */,
 				FD04487C288019D600304FF7 /* Preview Content */,
 				FD0777E028801B3D00186AB8 /* CustomListItem.swift */,
+				FD0777E62881A74100186AB8 /* QuestionModel.swift */,
 			);
 			path = "sparkQ WatchKit Extension";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				FD0777E128801B3D00186AB8 /* CustomListItem.swift in Sources */,
 				FD044877288019D600304FF7 /* sparkQApp.swift in Sources */,
 				FD044879288019D600304FF7 /* ComplicationController.swift in Sources */,
+				FD0777E72881A74100186AB8 /* QuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
