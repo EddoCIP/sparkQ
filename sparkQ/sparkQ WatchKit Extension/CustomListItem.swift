@@ -12,15 +12,16 @@ struct CustomListItem: View {
     var text: String
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 Spacer()
                 Image(systemName: "person")
                     .foregroundColor(Color.black)
                 Image(systemName: "person")
                     .foregroundColor(Color.black)
-            }.padding()
-            Spacer()
+            }
+            .padding()
+//            Spacer()
             VStack(alignment: .leading) {
                 Text("\(counter)")
                     .font(.caption2)
@@ -29,8 +30,11 @@ struct CustomListItem: View {
                     .lineLimit(nil)
                     .minimumScaleFactor(0.8)
             }
+            .padding(.horizontal)
+            .padding(.bottom)
             Spacer()
         }
+        .listRowBackground(Color.green.clipped().cornerRadius(15))
         .background(Color.green)
         .cornerRadius(15)
     }

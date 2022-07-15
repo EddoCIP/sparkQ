@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var questions: [String] = [
         "Given the choice of anyone in the world, whom would you want as a dinner guest?",
-        "What does friendship mean to you?"
+        "What does friendship mean to you?",
+        "I don't know why? You say goodbye."
     ]
     
     var body: some View {
