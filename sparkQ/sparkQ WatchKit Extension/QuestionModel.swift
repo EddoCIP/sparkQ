@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct QuestionModel: Hashable, Comparable {
+struct QuestionModel: Hashable, Comparable, Identifiable {
     static func < (lhs: QuestionModel, rhs: QuestionModel) -> Bool {
         lhs.isPinned && !rhs.isPinned
     }
     
+    var id : Int = 0
     var question : String = ""
     var isChecked : Bool = false
     var isPinned : Bool = false

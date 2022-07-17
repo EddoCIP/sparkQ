@@ -18,14 +18,15 @@ struct CustomListItem: View {
                 Spacer()
                 if question.isChecked {
                     Image(systemName: "checkmark.circle.fill")
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color.white)
                 }
                 if question.isPinned {
                     Image(systemName: "pin.circle.fill")
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color.white)
                 }
             }
-            .padding()
+            .padding(.horizontal)
+            .padding(.top)
 //            Spacer()
             VStack(alignment: .leading) {
                 Text("\(counter)")
