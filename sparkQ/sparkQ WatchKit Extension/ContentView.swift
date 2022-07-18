@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    var questions: [String] = [
-        "Given the choice of anyone in the world, whom would you want as a dinner guest?",
-        "What does friendship mean to you?",
-        "I don't know why? You say goodbye."
-    ]
+    
+    @State private var questionList : [QuestionModel] = Questions.list
     
     var body: some View {
-        List(Array(zip(questions.indices, questions)), id: \.0) { index, i in
-            CustomListItem(counter: index + 1, text: i)
+        let pinnedQuestions = self.$questionList.filter({a in a.isPinned.wrappedValue == true }).sorted {$0.id < $1.id}
+        let unPinnedQuestions = self.$questionList.filter({a in a.isPinned.wrappedValue == false && a.isChecked.wrappedValue == false }).sorted {$0.id < $1.id}
+        let checkedQuestions = self.$questionList.filter({a in a.isChecked.wrappedValue == true }).sorted {$0.id < $1.id}
+        let allList = pinnedQuestions + unPinnedQuestions + checkedQuestions
+        
+        
+        List {
+            ForEach(allList, id: \.id) { $question in
+                ListItem(question: $question)
+            }
         }
         .listStyle(CarouselListStyle())
     }
