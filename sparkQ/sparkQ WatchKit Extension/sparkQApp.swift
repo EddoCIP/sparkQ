@@ -13,6 +13,7 @@ struct sparkQApp: App {
         WindowGroup {
             NavigationView {
                 ContentView()
+                    .navigationTitle("sparkQ")
             }
         }
     }
