@@ -1,14 +1,13 @@
 //
 //  ContentView.swift
-//  sparkQ WatchKit Extension
+//  sparkQWatch WatchKit Extension
 //
-//  Created by Eddo Careera Iriyanto Putra on 14/07/22.
+//  Created by Eddo Careera Iriyanto Putra on 18/07/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    
     @State private var questionList : [QuestionModel] = [
         QuestionModel(id: 1, question: "Kapan terakhir kali kamu berjalan lebih dari satu jam? Kemana kamu pergi? dan apa pengalamannya?"),
         QuestionModel(id: 2, question: "Apa hadiah terbaik yang pernah kamu terima dan mengapa?"),

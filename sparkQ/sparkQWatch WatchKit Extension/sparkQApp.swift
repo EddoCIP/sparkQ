@@ -1,8 +1,8 @@
 //
 //  sparkQApp.swift
-//  sparkQ WatchKit Extension
+//  sparkQWatch WatchKit Extension
 //
-//  Created by Eddo Careera Iriyanto Putra on 14/07/22.
+//  Created by Eddo Careera Iriyanto Putra on 18/07/22.
 //
 
 import SwiftUI
