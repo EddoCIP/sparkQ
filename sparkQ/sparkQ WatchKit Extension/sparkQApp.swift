@@ -14,6 +14,7 @@ struct sparkQApp: App {
             NavigationView {
                 ContentView()
                     .navigationTitle("sparkQ")
+                    .navigationBarTitleDisplayMode(.inline)
             }
         }
     }
