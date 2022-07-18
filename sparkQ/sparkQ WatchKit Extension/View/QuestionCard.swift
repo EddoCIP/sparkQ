@@ -45,7 +45,8 @@ struct QuestionCard: View {
                 endPoint: .bottomLeading
             )
             .opacity(0.4)
-            .clipShape(RoundedRectangle(cornerRadius: 15))
+            .clipped()
+            .cornerRadius(9)
         )
     }
 }
