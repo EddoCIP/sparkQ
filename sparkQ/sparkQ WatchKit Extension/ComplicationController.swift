@@ -6,7 +6,7 @@
 //
 
 import ClockKit
-
+import SwiftUI
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
@@ -14,7 +14,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "sparkQ", supportedFamilies: CLKComplicationFamily.allCases)
+            CLKComplicationDescriptor(identifier: "complication", displayName: "sparkQ", supportedFamilies: [CLKComplicationFamily.graphicCircular,CLKComplicationFamily.graphicRectangular])
             // Multiple complication support can be added here with more descriptors
         ]
         
@@ -42,9 +42,27 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
-        handler(nil)
+        
+        if let template = getComplicationTemplate(for: complication) {
+            let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            handler(entry)
+        } else {
+            handler(nil)
+        }
     }
-    
+    func getComplicationTemplate(for complication: CLKComplication) -> CLKComplicationTemplate? {
+        // TODO: Get song data (opt 1)
+        
+        switch complication.family {
+        case .graphicCircular:
+            return CLKComplicationTemplateGraphicCircularView(CircularComplicationView())
+        case .graphicRectangular:
+            return CLKComplicationTemplateGraphicRectangularFullView(RectangularComplicationView())
+                
+        default:
+            return nil
+        }
+    }
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
         // Call the handler with the timeline entries after the given date
         handler(nil)
