@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		933205B828856C9D00D9ABAF /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933205B628856C9D00D9ABAF /* QuestionModel.swift */; };
+		933205B928856C9D00D9ABAF /* CustomListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933205B728856C9D00D9ABAF /* CustomListItem.swift */; };
+		933205C12885B23400D9ABAF /* SparkComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933205C02885B23400D9ABAF /* SparkComplication.swift */; };
 		FD36A7F1288481940064B7FD /* sparkQAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD36A7F0288481940064B7FD /* sparkQAppApp.swift */; };
 		FD36A7F3288481940064B7FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD36A7F2288481940064B7FD /* ContentView.swift */; };
 		FD36A7F5288481950064B7FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD36A7F4288481950064B7FD /* Assets.xcassets */; };
@@ -76,6 +79,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		933205B628856C9D00D9ABAF /* QuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		933205B728856C9D00D9ABAF /* CustomListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomListItem.swift; sourceTree = "<group>"; };
+		933205C02885B23400D9ABAF /* SparkComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkComplication.swift; sourceTree = "<group>"; };
 		FD044860288019D500304FF7 /* sparkQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0777E028801B3D00186AB8 /* CustomListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListItem.swift; sourceTree = "<group>"; };
 		FD0777E62881A74100186AB8 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
@@ -113,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		933205BF2885B21800D9ABAF /* ComplicationFaces */ = {
+			isa = PBXGroup;
+			children = (
+				933205C02885B23400D9ABAF /* SparkComplication.swift */,
+			);
+			path = ComplicationFaces;
+			sourceTree = "<group>";
+		};
 		FD044859288019D500304FF7 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +151,8 @@
 		FD36A7EF288481940064B7FD /* sparkQApp */ = {
 			isa = PBXGroup;
 			children = (
+				933205B728856C9D00D9ABAF /* CustomListItem.swift */,
+				933205B628856C9D00D9ABAF /* QuestionModel.swift */,
 				FD36A7F0288481940064B7FD /* sparkQAppApp.swift */,
 				FD36A7F2288481940064B7FD /* ContentView.swift */,
 				FD36A7F4288481950064B7FD /* Assets.xcassets */,
@@ -164,6 +180,7 @@
 		FD36A80A288481BE0064B7FD /* sparkQWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				933205BF2885B21800D9ABAF /* ComplicationFaces */,
 				FD0777E028801B3D00186AB8 /* CustomListItem.swift */,
 				FD0777E62881A74100186AB8 /* QuestionModel.swift */,
 				FD36A80B288481BE0064B7FD /* ContentView.swift */,
@@ -342,6 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933205B828856C9D00D9ABAF /* QuestionModel.swift in Sources */,
+				933205B928856C9D00D9ABAF /* CustomListItem.swift in Sources */,
 				FD36A7F3288481940064B7FD /* ContentView.swift in Sources */,
 				FD36A7F1288481940064B7FD /* sparkQAppApp.swift in Sources */,
 			);
@@ -356,6 +375,7 @@
 				FD36A810288481BE0064B7FD /* ComplicationController.swift in Sources */,
 				FD36A823288482030064B7FD /* CustomListItem.swift in Sources */,
 				FD36A822288482030064B7FD /* QuestionModel.swift in Sources */,
+				933205C12885B23400D9ABAF /* SparkComplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
