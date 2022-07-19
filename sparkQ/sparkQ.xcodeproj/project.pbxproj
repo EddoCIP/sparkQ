@@ -10,7 +10,7 @@
 		0E55E2A3288587B4000286A2 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55E2A2288587B4000286A2 /* ListItem.swift */; };
 		0E55E2A52885887B000286A2 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55E2A42885887B000286A2 /* Questions.swift */; };
 		936BEC4F2886B7910038E363 /* SparkComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936BEC4E2886B7910038E363 /* SparkComplication.swift */; };
-		FD044865288019D500304FF7 /* sparkQ WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD044864288019D500304FF7 /* sparkQ WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD044865288019D500304FF7 /* sparkQ.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD044864288019D500304FF7 /* sparkQ.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FD04486A288019D600304FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD044869288019D600304FF7 /* Assets.xcassets */; };
 		FD044870288019D600304FF7 /* sparkQ WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD04486F288019D600304FF7 /* sparkQ WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FD044875288019D600304FF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD044874288019D600304FF7 /* ContentView.swift */; };
@@ -57,7 +57,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				FD044865288019D500304FF7 /* sparkQ WatchKit App.app in Embed Watch Content */,
+				FD044865288019D500304FF7 /* sparkQ.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,7 +69,7 @@
 		0E55E2A42885887B000286A2 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		936BEC4E2886B7910038E363 /* SparkComplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkComplication.swift; sourceTree = "<group>"; };
 		FD044860288019D500304FF7 /* sparkQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD044864288019D500304FF7 /* sparkQ WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sparkQ WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD044864288019D500304FF7 /* sparkQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD044869288019D600304FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD04486F288019D600304FF7 /* sparkQ WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "sparkQ WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD044874288019D600304FF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				FD044860288019D500304FF7 /* sparkQ.app */,
-				FD044864288019D500304FF7 /* sparkQ WatchKit App.app */,
+				FD044864288019D500304FF7 /* sparkQ.app */,
 				FD04486F288019D600304FF7 /* sparkQ WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -196,7 +196,7 @@
 			);
 			name = "sparkQ WatchKit App";
 			productName = "sparkQ WatchKit App";
-			productReference = FD044864288019D500304FF7 /* sparkQ WatchKit App.app */;
+			productReference = FD044864288019D500304FF7 /* sparkQ.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		FD04486E288019D600304FF7 /* sparkQ WatchKit Extension */ = {
@@ -433,14 +433,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"sparkQ WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = FANN368M5W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sparkQ WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "sparkQ WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = sparkQ;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = sparkQ_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,7 +449,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -465,14 +465,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"sparkQ WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = FANN368M5W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sparkQ WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "sparkQ WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CFBundleDisplayName = sparkQ;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = sparkQ_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,7 +481,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -499,15 +499,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = FANN368M5W;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = sparkQ_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "sparkQ WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQWatch.watchkitapp;
+				PRODUCT_NAME = sparkQ;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -524,15 +523,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = FANN368M5W;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = sparkQ_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "sparkQ WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQWatch.watchkitapp;
+				PRODUCT_NAME = sparkQ;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -546,10 +544,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = FANN368M5W;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -559,10 +557,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = FANN368M5W;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQ;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahaeze.sparkQWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
