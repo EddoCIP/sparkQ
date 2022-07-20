@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct QuestionCard: View {
-    var counter: Int
-    var question : QuestionModel
+    var question : Question
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .center) {
-                Text("\(counter)")
+                Text("\(question.id)")
                     .bold()
                 Spacer()
                 Group {
@@ -33,7 +32,7 @@ struct QuestionCard: View {
             .padding(.vertical, 6)
             .padding(.leading, 5)
             .font(.title3)
-            Text(question.question)
+            Text(question.question  ?? "Unknown")
                 .font(.footnote)
                 .padding(.horizontal, 5)
         }
@@ -51,8 +50,8 @@ struct QuestionCard: View {
     }
 }
 
-struct QuestionCard_Previews: PreviewProvider {
-    static var previews: some View {
-        QuestionCard(counter: 0, question: QuestionModel())
-    }
-}
+//struct QuestionCard_Previews: PreviewProvider {
+//    static var previews: some View {
+//        QuestionCard(counter: 0, question: QuestionModel())
+//    }
+//}

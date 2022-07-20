@@ -10,20 +10,38 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var questionList : [QuestionModel] = Questions.list
-    
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var questions : FetchedResults <Question>
+//    @FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "isPinned == %@", true), animation: nil) var pinnedQuestions : FetchedResults <Question>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.id)],predicate: NSPredicate(format: "isPinned == %@", NSNumber(value: true))) var pinned: FetchedResults<Question>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.id)],predicate: NSPredicate(format: "isChecked == %@", NSNumber(value: true))) var checkeds: FetchedResults<Question>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.id)],predicate: NSPredicate(format: "isChecked == %@ AND isPinned == %@", NSNumber(value: false), NSNumber(value: false))) var normals : FetchedResults<Question>
     var body: some View {
-        let pinnedQuestions = self.$questionList.filter({a in a.isPinned.wrappedValue == true }).sorted {$0.id < $1.id}
-        let unPinnedQuestions = self.$questionList.filter({a in a.isPinned.wrappedValue == false && a.isChecked.wrappedValue == false }).sorted {$0.id < $1.id}
-        let checkedQuestions = self.$questionList.filter({a in a.isChecked.wrappedValue == true }).sorted {$0.id < $1.id}
-        let allList = pinnedQuestions + unPinnedQuestions + checkedQuestions
-        
-        
-        List {
-            ForEach(allList, id: \.id) { $question in
-                ListItem(question: $question)
+        List{
+            ForEach(pinned){ question in
+                ListItem(question: question)
+            }
+            ForEach(normals){ question in
+                ListItem(question: question)
+            }
+            ForEach(checkeds){ question in
+                ListItem(question: question)
             }
         }
         .listStyle(CarouselListStyle())
+        .onAppear(){
+	            if questions.isEmpty {
+                for q in questionList {
+                    let question = Question(context: moc)
+                    question.idQ = UUID()
+                    question.id = q.id
+                    question.question = q.question
+                    question.isChecked = q.isChecked
+                    question.isPinned = q.isPinned
+                }
+                    try? moc.save()
+            }
+        }
     }
 }
 
