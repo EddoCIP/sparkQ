@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0E55E2A3288587B4000286A2 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55E2A2288587B4000286A2 /* ListItem.swift */; };
 		0E55E2A52885887B000286A2 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55E2A42885887B000286A2 /* Questions.swift */; };
+		9332DB472887E16F004F01FF /* SparkQModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9332DB452887E16F004F01FF /* SparkQModel.xcdatamodeld */; };
+		9332DB492887E3E4004F01FF /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332DB482887E3E4004F01FF /* PersistenceController.swift */; };
 		936BEC4F2886B7910038E363 /* SparkComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936BEC4E2886B7910038E363 /* SparkComplication.swift */; };
 		FD044865288019D500304FF7 /* sparkQ WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD044864288019D500304FF7 /* sparkQ WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FD04486A288019D600304FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD044869288019D600304FF7 /* Assets.xcassets */; };
@@ -67,6 +69,9 @@
 /* Begin PBXFileReference section */
 		0E55E2A2288587B4000286A2 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		0E55E2A42885887B000286A2 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		9332DB462887E16F004F01FF /* SparkQModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SparkQModel.xcdatamodel; sourceTree = "<group>"; };
+		9332DB482887E3E4004F01FF /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		9332DB692887F188004F01FF /* SparkQModelv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SparkQModelv2.xcdatamodel; sourceTree = "<group>"; };
 		936BEC4E2886B7910038E363 /* SparkComplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkComplication.swift; sourceTree = "<group>"; };
 		FD044860288019D500304FF7 /* sparkQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD044864288019D500304FF7 /* sparkQ WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sparkQ WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +101,7 @@
 		0E55E29E288585E7000286A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9332DB482887E3E4004F01FF /* PersistenceController.swift */,
 				FD0777E62881A74100186AB8 /* QuestionModel.swift */,
 				0E55E2A42885887B000286A2 /* Questions.swift */,
 			);
@@ -150,6 +156,7 @@
 				FD04487A288019D600304FF7 /* Assets.xcassets */,
 				FD04487F288019D600304FF7 /* Info.plist */,
 				FD04487C288019D600304FF7 /* Preview Content */,
+				9332DB452887E16F004F01FF /* SparkQModel.xcdatamodeld */,
 			);
 			path = "sparkQ WatchKit Extension";
 			sourceTree = "<group>";
@@ -295,8 +302,10 @@
 				0E55E2A52885887B000286A2 /* Questions.swift in Sources */,
 				FD044877288019D600304FF7 /* sparkQApp.swift in Sources */,
 				936BEC4F2886B7910038E363 /* SparkComplication.swift in Sources */,
+				9332DB472887E16F004F01FF /* SparkQModel.xcdatamodeld in Sources */,
 				FD044879288019D600304FF7 /* ComplicationController.swift in Sources */,
 				FD0777E72881A74100186AB8 /* QuestionModel.swift in Sources */,
+				9332DB492887E3E4004F01FF /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +617,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9332DB452887E16F004F01FF /* SparkQModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9332DB692887F188004F01FF /* SparkQModelv2.xcdatamodel */,
+				9332DB462887E16F004F01FF /* SparkQModel.xcdatamodel */,
+			);
+			currentVersion = 9332DB692887F188004F01FF /* SparkQModelv2.xcdatamodel */;
+			path = SparkQModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FD04485A288019D500304FF7 /* Project object */;
 }

@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct sparkQApp: App {
+    let persistentController = PersistenceController.shared
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView()
                     .navigationTitle("sparkQ")
                     .navigationBarTitleDisplayMode(.inline)
+                    .environment(\.managedObjectContext, persistentController.container.viewContext)
             }
         }
     }

@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ListItem: View {
-    @Binding var question: QuestionModel
+//    @Binding var question: QuestionModel
+    @Environment(\.managedObjectContext) var moc
+//    @FetchRequest( sortDescriptors: []) var question : FetchedResults<Question>
+    var question : Question
     
     var body: some View {
-        QuestionCard(counter: question.id, question: question)
+        let _ = print(question)
+        QuestionCard( question: question)
             .swipeActions(edge: .leading, allowsFullSwipe: false) {
                 Button {
                     withAnimation {
@@ -19,6 +23,7 @@ struct ListItem: View {
                         if question.isChecked {
                             question.isChecked = false
                         }
+                        try?moc.save()
                     }
                 } label: {
                     Image(systemName: question.isPinned ? "pin.slash.fill" : "pin")
@@ -33,6 +38,7 @@ struct ListItem: View {
                         if question.isPinned {
                             question.isPinned = false
                         }
+                        try?moc.save()
                     }
                 } label: {
                     Image(systemName: question.isChecked ? "xmark" : "checkmark")

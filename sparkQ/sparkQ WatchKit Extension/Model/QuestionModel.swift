@@ -13,9 +13,10 @@ struct QuestionModel: Hashable, Comparable, Identifiable {
         lhs.isPinned && !rhs.isPinned
     }
     
-    var id : Int = 0
+    var id : Int16 = 0
     var question : String = ""
     var isChecked : Bool = false
     var isPinned : Bool = false
+    var type : Int = 0
 }
 
