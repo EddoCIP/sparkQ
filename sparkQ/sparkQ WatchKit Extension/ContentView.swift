@@ -12,36 +12,36 @@ struct ContentView: View {
     @State private var questionList : [QuestionModel] = Questions.list
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var questions : FetchedResults <Question>
+//    @FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "isPinned == %@", true), animation: nil) var pinnedQuestions : FetchedResults <Question>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.id)],predicate: NSPredicate(format: "isPinned == %@", NSNumber(value: true))) var pinned: FetchedResults<Question>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.id)],predicate: NSPredicate(format: "isChecked == %@", NSNumber(value: true))) var checkeds: FetchedResults<Question>
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.id)],predicate: NSPredicate(format: "isChecked == %@ AND isPinned == %@", NSNumber(value: false), NSNumber(value: false))) var normals : FetchedResults<Question>
     var body: some View {
-        let pinnedQuestions = self.questions.filter({a in a.isPinned == true }).sorted {$0.id < $1.id}
-        let unPinnedQuestions = self.questions.filter({a in a.isPinned == false && a.isChecked == false }).sorted {$0.id < $1.id}
-        let checkedQuestions = self.questions.filter({a in a.isChecked == true }).sorted {$0.id < $1.id}
-        let allList = pinnedQuestions + unPinnedQuestions + checkedQuestions
-        
         List{
-            ForEach(allList){ question in
+            ForEach(pinned){ question in
+                ListItem(question: question)
+            }
+            ForEach(normals){ question in
+                ListItem(question: question)
+            }
+            ForEach(checkeds){ question in
                 ListItem(question: question)
             }
         }
         .listStyle(CarouselListStyle())
         .onAppear(){
 	            if questions.isEmpty {
-                
-                for q in 0...questionList.count-1 {
-                   saveData(q: q)
+                for q in questionList {
+                    let question = Question(context: moc)
+                    question.idQ = UUID()
+                    question.id = q.id
+                    question.question = q.question
+                    question.isChecked = q.isChecked
+                    question.isPinned = q.isPinned
                 }
+                    try? moc.save()
             }
         }
-    }
-    func saveData(q: Int){
-        let question = Question(context: moc)
-        question.idQ = UUID()
-        question.question = questionList[q].question
-        question.id = questionList[q].id
-        question.isChecked = questionList[q].isChecked
-        question.isPinned = questionList[q].isPinned
-        question.type = 0
-        try?moc.save()
     }
 }
 

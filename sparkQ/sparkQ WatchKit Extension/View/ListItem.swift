@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct ListItem: View {
-//    @Binding var question: QuestionModel
     @Environment(\.managedObjectContext) var moc
-//    @FetchRequest( sortDescriptors: []) var question : FetchedResults<Question>
     var question : Question
     
     var body: some View {
-        let _ = print(question)
         QuestionCard( question: question)
             .swipeActions(edge: .leading, allowsFullSwipe: false) {
                 Button {
