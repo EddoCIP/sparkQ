@@ -7,11 +7,13 @@
 
 import SwiftUI
 import ClockKit
+
 struct SparkComplication: View {
     var body: some View {
         Text("Hello World!")
     }
 }
+
 struct CircularComplicationView: View {
     var body: some View {
         ZStack{
@@ -25,6 +27,7 @@ struct CircularComplicationView: View {
     }
     
 }
+
 struct RectangularComplicationView: View {
     var body: some View {
         HStack {

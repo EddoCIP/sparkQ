@@ -32,7 +32,7 @@ struct QuestionCard: View {
             .padding(.vertical, 6)
             .padding(.leading, 5)
             .font(.title3)
-            Text(question.question  ?? "Unknown")
+            Text(question.question ?? "Unknown")
                 .font(.footnote)
                 .padding(.horizontal, 5)
         }

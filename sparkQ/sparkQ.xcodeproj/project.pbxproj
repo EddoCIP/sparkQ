@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0E55E2A3288587B4000286A2 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55E2A2288587B4000286A2 /* ListItem.swift */; };
 		0E55E2A52885887B000286A2 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55E2A42885887B000286A2 /* Questions.swift */; };
+		0EC395AB288936150049B44E /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC395AA288936150049B44E /* Onboarding.swift */; };
+		0EC395AD28893E330049B44E /* QuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC395AC28893E330049B44E /* QuestionList.swift */; };
 		9332DB472887E16F004F01FF /* SparkQModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9332DB452887E16F004F01FF /* SparkQModel.xcdatamodeld */; };
 		9332DB492887E3E4004F01FF /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332DB482887E3E4004F01FF /* PersistenceController.swift */; };
 		936BEC4F2886B7910038E363 /* SparkComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936BEC4E2886B7910038E363 /* SparkComplication.swift */; };
@@ -69,6 +71,8 @@
 /* Begin PBXFileReference section */
 		0E55E2A2288587B4000286A2 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		0E55E2A42885887B000286A2 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		0EC395AA288936150049B44E /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		0EC395AC28893E330049B44E /* QuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionList.swift; sourceTree = "<group>"; };
 		9332DB462887E16F004F01FF /* SparkQModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SparkQModel.xcdatamodel; sourceTree = "<group>"; };
 		9332DB482887E3E4004F01FF /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		9332DB692887F188004F01FF /* SparkQModelv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SparkQModelv2.xcdatamodel; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				936BEC4E2886B7910038E363 /* SparkComplication.swift */,
 				FD0777E028801B3D00186AB8 /* QuestionCard.swift */,
 				0E55E2A2288587B4000286A2 /* ListItem.swift */,
+				0EC395AA288936150049B44E /* Onboarding.swift */,
+				0EC395AC28893E330049B44E /* QuestionList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -301,9 +307,11 @@
 				FD0777E128801B3D00186AB8 /* QuestionCard.swift in Sources */,
 				0E55E2A52885887B000286A2 /* Questions.swift in Sources */,
 				FD044877288019D600304FF7 /* sparkQApp.swift in Sources */,
+				0EC395AB288936150049B44E /* Onboarding.swift in Sources */,
 				936BEC4F2886B7910038E363 /* SparkComplication.swift in Sources */,
 				9332DB472887E16F004F01FF /* SparkQModel.xcdatamodeld in Sources */,
 				FD044879288019D600304FF7 /* ComplicationController.swift in Sources */,
+				0EC395AD28893E330049B44E /* QuestionList.swift in Sources */,
 				FD0777E72881A74100186AB8 /* QuestionModel.swift in Sources */,
 				9332DB492887E3E4004F01FF /* PersistenceController.swift in Sources */,
 			);
